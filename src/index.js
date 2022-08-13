@@ -5,6 +5,9 @@ import App from "./App";
 import { Provider } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
 import store from "./redux";
+import { fetchGithubData } from "./actions/person";
+
+store.dispatch(fetchGithubData());
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

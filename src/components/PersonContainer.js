@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import { connect } from "react-redux";
+import API from "../actions/person";
 import Person from "./Person";
 
 const PersonContainer = (props) => {
+  useEffect(() => {
+    props.getAllPerson();
+  }, []);
+
   const createCard = (personProps) => (
     <Col xs={4}>
       <Person {...personProps} />
@@ -30,4 +35,9 @@ const mapStateToProps = (state) => ({
   data: state.persons,
 });
 
-export default connect(mapStateToProps)(PersonContainer);
+const mapDispatchToProps = {
+  getAllPerson: API.getAllPerson,
+  addPerson: API.addPerson,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(PersonContainer);

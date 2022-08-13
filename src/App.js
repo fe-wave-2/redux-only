@@ -1,10 +1,10 @@
-import PersonContainer from "./components/PersonContainer";
+import Github from "./components/Github";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <PersonContainer />
+      <Github />
     </div>
   );
 }
