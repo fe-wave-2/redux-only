@@ -1,10 +1,11 @@
-import Github from "./components/Github";
+import React from "react";
+import CardTable from "./components/CardTable";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Github />
+      <CardTable />
     </div>
   );
 }
