@@ -17,9 +17,9 @@ function App() {
       {/* <Uploader />
       <Player />
       <ModalImage /> */}
-      {/* <Hoc /> */}
+      <Hoc />
       {/* <BarChart /> */}
-      <WebStorage />
+      {/* <WebStorage /> */}
     </div>
     /* <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.14.305/build/pdf.worker.min.js">
        <Pdf />
