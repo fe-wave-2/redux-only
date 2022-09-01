@@ -9,6 +9,7 @@ import Pdf from "./components/Pdf";
 import Hoc from "./components/Hoc";
 import BarChart from "./components/BarChart";
 import WebStorage from "./components/WebStorage";
+import BasicExample from "./components/BasicExample";
 import "./App.css";
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
       {/* <Uploader />
       <Player />
       <ModalImage /> */}
-      <Hoc />
+      {/* <Hoc /> */}
       {/* <BarChart /> */}
       {/* <WebStorage /> */}
+      <BasicExample />
     </div>
     /* <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.14.305/build/pdf.worker.min.js">
        <Pdf />
