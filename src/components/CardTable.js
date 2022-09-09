@@ -35,6 +35,7 @@ const CardTable = () => {
         );
       })}
       <h1>{result}</h1>
+      <a></a>
     </Row>
   );
 };
